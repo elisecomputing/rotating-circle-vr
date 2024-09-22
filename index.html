@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rotating Circle</title>
+  </head>
+  <body>
+    <a-scene background="color: black">
+      <a-entity
+        geometry="primitive: circle; radius: 1"
+        position="0 1.6 -3"
+        material="color: blue"
+      >
+        <a-animation
+          to="0 360 0"
+          dur="5000"
+          repeat="indefinite"
+        ></a-animation>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
